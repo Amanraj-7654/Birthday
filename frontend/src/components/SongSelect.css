@@ -1,0 +1,11 @@
+.soundtrack-select {
+  width: min(100%, 250px);
+  min-height: 34px;
+  margin-top: 9px;
+  padding: 0 9px;
+  border: 1px solid #e4d9d0;
+  border-radius: 3px;
+  background: #fffdf8;
+  color: #57464a;
+  font: 10px var(--sans);
+}

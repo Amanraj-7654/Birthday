@@ -1,0 +1,16 @@
+.birthday-countdown{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;padding:32px 22px;color:#33252c;background:radial-gradient(ellipse at 18% 22%,#f4dfd4 0,transparent 34%),radial-gradient(ellipse at 82% 76%,#dcebe4 0,transparent 34%),linear-gradient(135deg,#f8f0e9,#f5f4ef 52%,#eaf0eb)}
+.birthday-countdown::before{position:absolute;inset:0;content:'';pointer-events:none;opacity:.28;background-image:radial-gradient(#785e5540 .65px,transparent .65px);background-size:16px 16px}
+.countdown-content{position:relative;width:min(650px,100%);text-align:center;animation:countdown-arrive .8s cubic-bezier(.22,1,.36,1) both}
+.countdown-kicker{font-size:9px;letter-spacing:1.9px;font-weight:700;color:#a26065}
+.countdown-name{margin:17px 0 8px;color:#84747a;font-size:13px}
+.countdown-content h1{margin:0;font-family:var(--serif);font-size:68px;font-weight:400;line-height:1.03;letter-spacing:0}
+.countdown-content h1 em{color:#b7505a}
+.countdown-date{margin:19px 0 31px;color:#76666c;font-size:12px}
+.countdown-units{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:520px;margin:0 auto}
+.countdown-unit{min-width:0;padding:15px 8px 13px;border-top:1px solid #cdb7ad;border-bottom:1px solid #cdb7ad;background:#fff8}
+.countdown-unit strong{display:block;font-family:var(--serif);font-size:42px;font-weight:400;line-height:1.05;font-variant-numeric:tabular-nums;color:#49343a}
+.countdown-unit span{display:block;margin-top:7px;color:#927e7c;font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.countdown-year{display:block;margin-top:24px;color:#ae7174;font-family:var(--serif);font-size:17px;font-style:italic}
+@keyframes countdown-arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){.countdown-content h1{font-size:52px}.countdown-unit strong{font-size:34px}}
+@media(max-width:420px){.countdown-units{gap:5px}.countdown-unit{padding-inline:3px}.countdown-unit strong{font-size:29px}.countdown-unit span{font-size:7px;letter-spacing:.5px}}

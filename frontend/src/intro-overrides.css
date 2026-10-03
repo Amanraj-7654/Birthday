@@ -1,0 +1,2 @@
+.falling-petal{animation:petal-fall var(--fall-duration) linear var(--fall-delay) forwards}@keyframes petal-fall{0%{opacity:0;transform:translate3d(0,-8vh,0) rotate(0deg)}12%{opacity:.95}100%{opacity:0;transform:translate3d(var(--drift),112vh,0) rotate(340deg)}}@keyframes intro-confetti{0%{opacity:0;transform:translate(0,0) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--burst-x),calc(var(--burst-y) + 60px)) rotate(540deg)}}
+.soundtrack-frame.is-playing~.track-details .waveform span{animation-play-state:running}

@@ -1,0 +1,125 @@
+A LITTLE MORE LOVE - USER GUIDE
+================================
+
+WHAT THIS WEBSITE IS
+--------------------
+This is a birthday celebration page with a private-in-practice content dashboard.
+Visitors can browse photos, memories, a timeline, birthday messages, and an optional
+music player. The site owner can edit that content from the /admin page.
+
+The sample birthday is for Alex. The pictures, albums, memories, timeline events,
+and messages are demo content. Replace them with your own content before sharing
+this page as a real celebration.
+
+OPENING THE WEBSITE
+-------------------
+1. Start the website using the project's development command: npm run dev.
+2. Open the local address printed by the command in your browser. It is commonly
+   http://localhost:5173/.
+3. The public page begins with a short, automatic birthday intro. It fades away
+   after about two seconds. No click is needed.
+4. To open the content dashboard, choose "The little details" in the page header,
+   or visit /admin directly (for example, http://localhost:5173/admin).
+5. Use "Back to celebration" or "View birthday page" to return to the public page.
+
+VISITOR FEATURES
+----------------
+- Use the top links to jump to Memories, Our story, Birthday wishes, or The soundtrack.
+- Select an album above the photo gallery to filter its photos. Choose "All the good
+  bits" to see every photo again.
+- Select a photo to open it larger. Use the arrows or keyboard arrow keys to move
+  between photos. Press Escape to close the photo viewer.
+- Press "Make a wish" or tap the cake to animate the candles and celebration.
+- The soundtrack photo frame automatically changes pictures while motion is enabled.
+  This slideshow does not start the music.
+- Press the play button to start or pause music. The progress and volume controls
+  are available in the player. Music is never started automatically.
+- On a phone, open the menu button in the page header to navigate between sections.
+- The intro, gallery, and page effects respect the visitor's reduced-motion device
+  preference. The site owner can also disable animations in Settings.
+
+ADMIN DASHBOARD
+---------------
+The dashboard at /admin contains these sections:
+
+Dashboard
+Shows total photos, albums, memories, and birthday messages, as well as recent
+photos and a summary of featured content. Select a summary card to open that section.
+
+Photos
+- Choose "Add photo" to enter an image URL, title, caption, date, album, and featured
+  status. A preview appears when the image URL is available.
+- Choose "Upload photo" to select an image file from your device. The photo is added
+  immediately; edit it afterward to add a caption, date, album, or featured status.
+- Use "Replace" on a photo to select a new local image for that photo.
+- Use "Edit" to change its details. Use the star to feature or unfeature it.
+- Use the up/down arrows to change its gallery order.
+- Search captions, titles, and dates. Filter by album or featured status.
+- Choose the trash icon to delete. The browser asks you to confirm first.
+
+Albums
+- Create an album and give it a name, description, and cover photo.
+- Use "View photos" to open the photo list filtered to that album.
+- Edit an album to rename it or select a different cover.
+- Use the arrows to reorder albums. Deleting asks for confirmation. Photos from a
+  deleted album are moved to another album if one remains, or become unsorted.
+- To put photos in an album, edit each photo and select the album field.
+
+Memories
+Add or edit a story with title, description, date, photo, category, location, and
+featured status. Use the arrows to reorder the memories. Memories are displayed in
+the public "Little things we remember" section.
+
+Birthday messages
+Add or edit the sender, message, date, featured status, and visibility. Visible
+messages appear on the public birthday wishes section, with featured messages shown
+first. Use the arrows to change their order. Deleting requires confirmation.
+
+Timeline
+Add or edit the year/date, title, description, and photo for each timeline chapter.
+Use the arrows to change its position. Changes appear in the public timeline.
+
+Settings
+Set the birthday person's name, birthday label, hero heading and subtitle, accent
+theme, background style, soundtrack URL, footer note, optional social links, and
+animation/confetti preferences. Press "Save settings" to apply those changes to the
+public page. Changing the person's name also updates the default hero heading.
+
+SAVING AND PHOTO STORAGE
+-----------------------
+Content is saved automatically in this browser's local storage. Settings are applied
+when the Save settings button is pressed. Refreshing the page in the same browser
+keeps saved changes.
+
+This prototype does not use an online database or account system. Local changes are
+not automatically shared with other browsers, devices, or visitors. Uploaded images
+are stored as browser data, not uploaded to a server. Large images may exceed browser
+storage limits. For a shared production site, connect the app to a backend and image
+storage service before relying on it for important content.
+
+Image URLs and the sample soundtrack need to be reachable by the visitor's browser.
+Use image/audio URLs that you own or have permission to use. An upload from your
+computer is saved only in the browser where it was selected.
+
+RESETTING THE DEMO
+------------------
+To discard local edits and load the original sample data again, clear this site's
+local storage in your browser's developer tools. The saved content key is:
+
+a-little-more-love-content-v1
+
+Clearing all site data may also remove other local settings for this website. This
+cannot be undone, so export or otherwise preserve any important content first.
+
+TROUBLESHOOTING
+---------------
+- A photo does not appear: check that the URL is correct and publicly accessible, or
+  upload the image from your device instead.
+- Music does not play: press Play, check the audio URL and device volume, and confirm
+  that the audio source allows playback from this website.
+- Changes seem missing on another device: this prototype stores changes per browser.
+  A backend is needed to share edits across devices.
+- The intro does not animate: the device/browser may have reduced motion enabled, or
+  animations may be disabled in Settings.
+
+END OF GUIDE

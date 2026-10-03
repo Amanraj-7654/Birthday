@@ -1,0 +1,65 @@
+.wish-submit{margin-top:32px;padding:24px 0;border-top:1px solid #eaded7;border-bottom:1px solid #eaded7}
+.wish-submit-heading{display:flex;align-items:flex-start;gap:11px;color:#ad6b70}
+.wish-submit-heading>svg{margin-top:3px}
+.wish-submit-heading h3{margin:0;color:#49353b;font-family:var(--serif);font-size:20px;font-weight:400}
+.wish-submit-heading p{margin:5px 0 0;color:#8c7e80;font-size:11px}
+.wish-submit-fields{display:grid;grid-template-columns:minmax(180px,.7fr) minmax(0,1.8fr);gap:14px;margin-top:19px}
+.wish-submit-fields label{display:grid;gap:7px;color:#716064;font-size:10px;font-weight:600}
+.wish-submit-fields input,.wish-submit-fields textarea{width:100%;box-sizing:border-box;padding:10px 11px;border:1px solid #e4d8d1;border-radius:2px;background:#fffdfa;color:#49353b;font:inherit;font-size:12px;resize:vertical}
+.wish-submit-fields input:focus,.wish-submit-fields textarea:focus{outline:2px solid #c77d7e66;outline-offset:1px}
+.wish-submit-footer{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:12px}
+.wish-submit-feedback{margin:0;color:#688072;font-size:10px}
+.wish-submit-feedback.is-error{color:#a74343}
+.wish-submit-footer button{height:36px;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 14px;border:0;border-radius:2px;background:#49343a;color:#fff7f3;font:inherit;font-size:10px;cursor:pointer}
+.wish-submit-footer button:disabled{opacity:.5;cursor:not-allowed}
+
+@media(max-width:650px){
+  .wish-submit-fields{grid-template-columns:minmax(0,1fr)}
+  .wish-submit-footer{align-items:flex-start;flex-direction:column}
+  .wish-submit-footer button{align-self:flex-end}
+}
+
+@media (max-width: 850px) {
+  .music-player {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    padding: 15px;
+  }
+
+  .soundtrack-frame {
+    margin-inline: auto;
+  }
+
+  .track-details {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .track-progress {
+    gap: 5px;
+  }
+
+  .track-progress input {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .track-controls {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .track-controls > span {
+    min-width: 0;
+    white-space: normal;
+  }
+
+  .volume-control {
+    margin-left: auto;
+  }
+
+  .volume-control input {
+    width: 42px;
+  }
+}
